@@ -1,0 +1,20 @@
+<h1>Books#edit</h1>
+<p>Find me in app/views/books/edit.html.erb</p>
+
+<%= form_for @book do |input| %>
+
+    <p>
+      <%= input.label :author %> <br/>
+      <%= input.text_field :author %>
+    </p>
+
+    <p>
+      <%= input.label :title %> <br/>
+      <%= input.text_field :title %>
+    </p>
+
+    <p>
+      <%= input.submit "Update" %>
+    </p>
+
+<% end %>

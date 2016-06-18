@@ -1,0 +1,13 @@
+<h1>Books#show</h1>
+<p>Find me in app/views/books/show.html.erb</p>
+
+<p>
+ID: <%= @book.id %> <br/>
+TITLE: <%= @book.title %> <br/>
+AUTHOR: <%= @book.author %> <br/>
+CREATED AT: <%= @book.created_at %> <br/>
+UPDATED AT: <%= @book.updated_at %>
+</p>
+
+<%= link_to "Back", books_path %> |
+<%= link_to "Edit", edit_book_path %>
